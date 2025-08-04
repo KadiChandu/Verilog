@@ -6,7 +6,7 @@ module dff_tb;
         .clk(clk),
         .q(q),
         .q_bar(q_bar);
-    always #5 CLK = ~CLK;
+    always #5 clk = ~clk;
     initial begin
         clk = 0; d = 0; #10;
         d = 1; #10;
